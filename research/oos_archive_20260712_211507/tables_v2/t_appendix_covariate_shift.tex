@@ -1,0 +1,20 @@
+\begin{table}
+\caption{Covariate shift: train vs test feature distributions (Kolmogorov-Smirnov)}
+\label{tab:covshift}
+\begin{tabular}{lrrrrrr}
+\toprule
+feature & train_mean & test_mean & train_median & test_median & ks_statistic & ks_pvalue \\
+\midrule
+frac_maker & 0.3657 & 0.2166 & 0.3299 & 0.0333 & 0.3432 & 0.0000 \\
+total_volume & 84231.2466 & 41572.5577 & 8879.8593 & 1850.7433 & 0.3238 & 0.0000 \\
+frac_late_entry & 0.2815 & 0.2160 & 0.2487 & 0.0939 & 0.3158 & 0.0000 \\
+frac_early_entry & 0.4718 & 0.6068 & 0.4544 & 0.6941 & 0.3140 & 0.0000 \\
+category_hhi & 0.5148 & 0.6898 & 0.4481 & 0.6872 & 0.2981 & 0.0000 \\
+frac_longshot & 0.2211 & 0.3669 & 0.1930 & 0.2222 & 0.2793 & 0.0000 \\
+avg_price & 0.4881 & 0.3908 & 0.4906 & 0.4459 & 0.2613 & 0.0000 \\
+counterparty_hhi & 0.0646 & 0.0557 & 0.0487 & 0.0352 & 0.2131 & 0.0000 \\
+past_clv_vw & 0.0038 & -0.0029 & -0.0049 & -0.0009 & 0.1962 & 0.0000 \\
+n_trades & 412.5594 & 408.0503 & 92.5000 & 74.0000 & 0.1730 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}

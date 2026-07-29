@@ -1,0 +1,13 @@
+\begin{tabular}{lrrrrr}
+\toprule
+model & auc & pr\_auc & ci\_lo & ci\_hi & p\_vs\_benchmark \\
+\midrule
+Benchmark: past CLV & 0.5116 & 0.3564 & 0.5077 & 0.5158 & NaN \\
+Random & 0.5002 & 0.3500 & 0.4967 & 0.5037 & 0.0000 \\
+Logistic (L2) & 0.4726 & 0.3278 & 0.4686 & 0.4767 & 0.0000 \\
+Random Forest & 0.4961 & 0.3507 & 0.4919 & 0.5003 & 0.0000 \\
+XGBoost & 0.4740 & 0.3361 & 0.4697 & 0.4783 & 0.0000 \\
+LightGBM* & 0.4758 & 0.3322 & 0.4714 & 0.4800 & 0.0000 \\
+LightGBM* (train-only fit) & 0.4668 & NaN & 0.4624 & 0.4708 & 0.0000 \\
+\bottomrule
+\end{tabular}

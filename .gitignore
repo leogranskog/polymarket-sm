@@ -1,0 +1,52 @@
+# Data (large, downloaded separately, never commit)
+data/raw/
+data/processed/
+*.parquet
+
+# Model artifacts (large, regeneratable from master_numbers.py)
+research/models_v2/*.pkl
+*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs and checkpoints (regeneratable, but the RUN LOGS themselves
+# should be committed — see exception below)
+research/tables_v2/_ckpt_*.parquet
+*.log
+
+# Exceptions: these are permanent records and SHOULD be committed
+# even though they look log-like
+!research/TRUE_OOS_RUN_LOG.txt
+!research/TRUE_OOS_2_RUN_LOG.txt
+!research/MASTER_NUMBERS.md
+!research/PRE_ANALYSIS_PLAN.md
+!research/PRE_ANALYSIS_PLAN_2.md
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.bbl
+*.blg

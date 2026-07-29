@@ -1,0 +1,14 @@
+\begin{table}
+\caption{Robustness: informed-flow effect excluding distributional tails}
+\label{tab:insider_robust}
+\begin{tabular}{lrrrrrr}
+\toprule
+config & n & auc & ci_lo & ci_hi & coef & p_clustered \\
+\midrule
+Full sample & 36815 & 0.5412 & 0.5323 & 0.5501 & 0.2201 & 0.0000 \\
+Excl. D1 & 33133 & 0.5184 & 0.5098 & 0.5269 & 0.1188 & 0.0002 \\
+Excl. D1+D10 & 29451 & 0.5182 & 0.5104 & 0.5269 & 0.1789 & 0.0000 \\
+Rank-transformed & 36815 & 0.5412 & 0.5323 & 0.5501 & 0.4960 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}

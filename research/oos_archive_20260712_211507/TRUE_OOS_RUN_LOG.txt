@@ -1,0 +1,43 @@
+=================================================================
+  TRUE OUT-OF-SAMPLE CONFIRMATORY RUN — 2025-H2
+  Timestamp: 2026-07-12T21:12:47.617944
+  Hash-verified against PRE_ANALYSIS_PLAN.md. Single look.
+=================================================================
+
+=================================================================
+  H1/H2/H3 — Persistence, reversal, specialization: TRUE OOS
+=================================================================
+
+  H1 Persistence: n=138,335  rho=+0.0526 [+0.0472,+0.0584]  p=0.0000  -> FAIL (persistence emerges)
+
+  H2 Reversal (past_clv_vw coef): n=77,888  coef=+0.0311  p=0.0000  -> FAIL
+  H3 Specialization (specialist coef): coef=+0.0060  p=0.0000  -> PASS
+
+  Frozen comparisons: H2 coef=-0.0381 (p=8.4e-04) | H3 coef=+0.0061 (p=3.6e-13)
+
+=================================================================
+  H4 — Frozen behavioral-ML model: TRUE OOS
+=================================================================
+
+  H4 ML AUC: n=116,820  AUC=0.5044 [0.5004,0.5084]  probit-d=+0.0156  -> FAIL (signal emerges)
+  Frozen comparison: AUC=0.4758 [0.4714,0.4800]
+
+=================================================================
+  H5 — Market-level informed order flow: TRUE OOS
+=================================================================
+  219,245 resolved predictions in TRUE-OOS window
+
+  H5 Insider-flow AUC: n=54,858 events=10,758  AUC=0.5579 [0.5502,0.5666]  p=0.0000  probit-d=+0.2059  -> PASS (signal replicates)
+  Frozen comparison: AUC=0.5412 [0.5323,0.5501]
+
+=================================================================
+  FINAL SUMMARY — PASS/FAIL against pre-registered criteria
+  (p-values Holm-Bonferroni corrected across H1,H2,H3,H5)
+=================================================================
+  H1: FAIL  (raw p=0.0000, Holm-adj p=0.0000)
+  H2: FAIL  (raw p=0.0000, Holm-adj p=0.0000)
+  H3: PASS  (raw p=0.0000, Holm-adj p=0.0000)
+  H5: PASS  (raw p=0.0000, Holm-adj p=0.0000)
+  H4: FAIL  (CI-based criterion, no p-value)
+
+  ✓ -> C:\Users\leogr\polymarket-sm\research\tables_v2\t20_true_oos_summary.csv

@@ -1,0 +1,13 @@
+\begin{table}
+\caption{Continuous CLV target: rank correlation (threshold-free)}
+\label{tab:continuous}
+\begin{tabular}{lrrrrr}
+\toprule
+model & spearman_rho & ci_lo & ci_hi & p & n \\
+\midrule
+Benchmark: past CLV & 0.0270 & 0.0200 & 0.0344 & 0.0000 & 79329 \\
+LightGBM (train-only) & 0.0035 & -0.0035 & 0.0105 & 0.3204 & 79329 \\
+LightGBM (train+val) & 0.0297 & 0.0228 & 0.0368 & 0.0000 & 79329 \\
+\bottomrule
+\end{tabular}
+\end{table}

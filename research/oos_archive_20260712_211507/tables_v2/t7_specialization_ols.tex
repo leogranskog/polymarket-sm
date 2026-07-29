@@ -1,0 +1,37 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}    &   fwd\_clv\_vw   & \textbf{  R-squared:         } &     0.004   \\
+\textbf{Model:}            &       OLS        & \textbf{  Adj. R-squared:    } &     0.004   \\
+\textbf{Method:}           &  Least Squares   & \textbf{  F-statistic:       } &     37.60   \\
+\textbf{Date:}             & Sun, 12 Jul 2026 & \textbf{  Prob (F-statistic):} &  1.23e-38   \\
+\textbf{Time:}             &     19:38:30     & \textbf{  Log-Likelihood:    } &    49371.   \\
+\textbf{No. Observations:} &       52888      & \textbf{  AIC:               } & -9.873e+04  \\
+\textbf{Df Residuals:}     &       52882      & \textbf{  BIC:               } & -9.868e+04  \\
+\textbf{Df Model:}         &           5      & \textbf{                     } &             \\
+\textbf{Covariance Type:}  &       HC3        & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                       & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}     &      -0.0008  &        0.002     &    -0.402  &         0.688        &       -0.005    &        0.003     \\
+\textbf{specialist}    &       0.0061  &        0.001     &     7.270  &         0.000        &        0.004    &        0.008     \\
+\textbf{log\_trades}   &       0.0015  &        0.000     &     3.096  &         0.002        &        0.001    &        0.002     \\
+\textbf{log\_volume}   &      -0.0024  &        0.000     &    -9.789  &         0.000        &       -0.003    &       -0.002     \\
+\textbf{frac\_maker}   &       0.0049  &        0.001     &     3.281  &         0.001        &        0.002    &        0.008     \\
+\textbf{past\_clv\_vw} &      -0.0381  &        0.011     &    -3.339  &         0.001        &       -0.060    &       -0.016     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 10023.920 & \textbf{  Durbin-Watson:     } &     1.917   \\
+\textbf{Prob(Omnibus):} &    0.000  & \textbf{  Jarque-Bera (JB):  } & 242401.169  \\
+\textbf{Skew:}          &   -0.265  & \textbf{  Prob(JB):          } &      0.00   \\
+\textbf{Kurtosis:}      &   13.475  & \textbf{  Cond. No.          } &      163.   \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors are heteroscedasticity robust (HC3)

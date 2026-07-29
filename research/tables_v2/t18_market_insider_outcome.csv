@@ -1,0 +1,2 @@
+n_predictions,n_events,win_rate,auc,auc_ci_lo,auc_ci_hi,point_biserial_r,naive_p_uncorrected,logit_coef_late_imbalance,logit_p_clustered,late_window_hours
+36815,8104,0.4578296889854679,0.5411936495357965,0.5315932201869188,0.5508243842938176,0.06335611720184396,4.596599440441201e-34,0.2201073231222939,2.4099265860462776e-11,48

@@ -1,0 +1,28 @@
+=================================================================
+  SECOND CONFIRMATORY WINDOW — 2026-Q1 (Jan-Mar 2026)
+  Timestamp: 2026-07-13T02:18:05.554364
+  Hash-verified (analysis-only) against PRE_ANALYSIS_PLAN_2.md. Single look.
+=================================================================
+
+  H1 Persistence (H2-2025 -> Q1-2026): n=174,582  rho=+0.0538 [+0.0486,+0.0591]  p=0.0000  -> FAIL
+
+  H2 Reversal: n=104,542  coef=+0.0099  p=0.1675  -> FAIL
+  H3 Specialization: coef=-0.0045  p=0.0000  -> FAIL
+
+  H4 ML AUC: n=156,813  AUC=0.4908 [0.4878,0.4939]  -> FAIL
+
+  H5: scanning 2026-Q1 trades (streaming)...
+  336,374 resolved predictions in 2026-Q1
+
+  H5 Insider flow: n=60,227 events=10,527  AUC=0.5165 [0.5089,0.5237]  coef=+0.0292  p=2.92e-01  -> PASS
+
+=================================================================
+  SECOND-WINDOW SUMMARY vs FIRST CONFIRMATORY WINDOW (2025-H2)
+=================================================================
+  H1 Persistence: 2025-H2 rho=+0.053 (FAIL) | 2026-Q1 rho=+0.0538 (FAIL)
+  H2 Reversal:    2025-H2 coef=+0.031 (FAIL) | 2026-Q1 coef=+0.0099 (FAIL)
+  H3 Specialization: 2025-H2 coef=+0.0060 (PASS) | 2026-Q1 coef=-0.0045 (FAIL)
+  H4 ML AUC:      2025-H2 AUC=0.5044 (FAIL) | 2026-Q1 AUC=0.4908 (FAIL)
+  H5 Insider flow: 2025-H2 AUC=0.5579 (PASS) | 2026-Q1 AUC=0.5165 (PASS)
+
+  Saved -> C:\Users\leogr\polymarket-sm\research\tables_v2\t21_second_window_summary.csv

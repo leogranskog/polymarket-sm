@@ -29,9 +29,9 @@
     LightGBM: AUC=0.5405 [0.5358,0.5448]  DeLong p vs benchmark=0.0000
     Best params: {'n_estimators': 137, 'max_depth': 7, 'learning_rate': 0.022631863448175697, 'subsample': 0.7012000322254772, 'colsample_bytree': 0.6412568987644841, 'min_child_samples': 48}
 
-  ✓ THE frozen model saved -> C:\Users\leogr\polymarket-sm\research\models_v2\MASTER_frozen_model.pkl
+  ✓ THE frozen model saved -> [project root]\research\models_v2\MASTER_frozen_model.pkl
   (this exact object is reused, unmodified, in Section 4)
-  Saved -> C:\Users\leogr\polymarket-sm\research\tables_v2\MASTER_table_model_comparison.csv
+  Saved -> [project root]\research\tables_v2\MASTER_table_model_comparison.csv
 
 ======================================================================
   SECTION 2: PERSISTENCE (full population, fixed cohort, survivor cohort)
@@ -65,7 +65,7 @@
     Cohort:    n=312   rho=+0.2976
     Survivors: n=180   rho=+0.4662
 
-  Saved -> C:\Users\leogr\polymarket-sm\research\tables_v2\MASTER_table_persistence.csv
+  Saved -> [project root]\research\tables_v2\MASTER_table_persistence.csv
 
 ======================================================================
   SECTION 3: DECILE PORTFOLIO SORT
@@ -84,7 +84,7 @@
     D10: mean fwd CLV = +0.0256  (n=7933)
 
   D10-D1 spread: +0.0337
-  Saved -> C:\Users\leogr\polymarket-sm\research\tables_v2\MASTER_table_deciles.csv
+  Saved -> [project root]\research\tables_v2\MASTER_table_deciles.csv
 
 ======================================================================
   SECTION 4: STALENESS (frozen model from Section 1, refit with identical tuning procedure and ALL genuinely available pre-cutoff data, placebo)
@@ -104,7 +104,7 @@
     Refit AUC:   0.7864 [0.7834,0.7896]  (n_train=200,077, params: {'n_estimators': 498, 'max_depth': 7, 'learning_rate': 0.06465089433352318, 'subsample': 0.9345096954319009, 'colsample_bytree': 0.8265084079758891, 'min_child_samples': 50})
     Placebo AUC: 0.4881  (clean)
 
-  Saved -> C:\Users\leogr\polymarket-sm\research\tables_v2\MASTER_table_staleness.csv
+  Saved -> [project root]\research\tables_v2\MASTER_table_staleness.csv
 
 ======================================================================
   ALL SECTIONS COMPLETE. This file is the only source for
